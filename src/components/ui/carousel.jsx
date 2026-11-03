@@ -9,7 +9,7 @@ function itemsForViewport() {
 
 function CarouselControl({ disabled, onClick, title, type }) {
   return (
-    <button aria-label={title} className={`flex h-10 w-10 items-center justify-center rounded-full border border-[#A13D63] bg-[#F1F7ED] text-[#A13D63] transition enabled:hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40 ${type === "previous" ? "rotate-180" : ""}`} disabled={disabled} onClick={onClick} title={title} type="button">
+    <button aria-label={title} className={`flex h-10 w-10 items-center justify-center bg-transparent text-[#2F7A57] transition enabled:hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40 ${type === "previous" ? "rotate-180" : ""}`} disabled={disabled} onClick={onClick} title={title} type="button">
       <IconArrowNarrowRight aria-hidden="true" />
     </button>
   );
